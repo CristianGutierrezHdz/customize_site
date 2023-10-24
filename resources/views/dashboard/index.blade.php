@@ -34,7 +34,7 @@
         </div>
 
         <div>
-            <form>
+            <form action="{{ route('dashboard.actualizar-web-site') }}" method="GET">
                 @csrf
                 <div class="space-y-12">
                     <div class="border-b border-gray-900/10 pb-12">
@@ -55,7 +55,7 @@
                                         <span
                                             class="flex select-none items-center pl-3 text-gray-500 sm:text-sm">perzonalizeweb.com/web-site/</span>
                                         <input type="text" name="dominio" id="dominio" autocomplete="dominio"
-                                            value="1"
+                                            value="{{ $site_web->dominio }}"
                                             class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                                             placeholder="janesmith">
                                     </div>
@@ -68,14 +68,22 @@
                                 <!-- Agrega espacio de separación con una clase de margen a continuación -->
                                 <label class="ml-4 relative inline-flex cursor-pointer items-center">
 
-                                    <input type="hidden" id="activo" value="1" name="activo">
-                                    <input class="hidden" type="checkbox" id="toggle_1" value="1">
+                                    <input type="hidden" id="activo" value="{{ $site_web->activo }}" name="activo">
+                                    <input class="hidden" type="checkbox" id="toggle_1" value="{{ $site_web->activo }}">
 
-                                    <label
-                                        class="flex items-center justify-end w-10 border border-black h-6 p-1 rounded-full cursor-pointer bg-black"
-                                        for="toggle_1">
-                                        <span class="w-4 h-4 bg-white rounded-full"></span>
-                                    </label>
+                                    @if ($site_web->activo == 0)
+                                        <label
+                                            class="flex items-center justify-start w-10 border border-black h-6 p-1 rounded-full cursor-pointer"
+                                            for="toggle_1">
+                                            <span class="w-4 h-4 bg-black rounded-full"></span>
+                                        </label>
+                                    @else
+                                        <label
+                                            class="flex items-center justify-end w-10 border border-black h-6 p-1 rounded-full cursor-pointer bg-black"
+                                            for="toggle_1">
+                                            <span class="w-4 h-4 bg-white rounded-full"></span>
+                                        </label>
+                                    @endif
                                 </label>
                             </div>
                         </div>
@@ -83,7 +91,8 @@
                 </div>
 
                 <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Ver
+                    <a href="{{ route('dashboard.index', ['dominio' => $site_web->dominio]) }}"
+                        class="text-sm font-semibold leading-6 text-gray-900">Ver
                         Sitio</a>
                     <button type="submit"
                         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Actualizar</button>
