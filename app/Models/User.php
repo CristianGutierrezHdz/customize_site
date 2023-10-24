@@ -12,34 +12,29 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'name',
         'email',
         'password',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
+
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
+
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ relaciones con la PK de la tabla ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    public function sites_web()
+    {
+        // la llave primaria de esta tabla 'users' se propaga en 'sites_web'
+        // la FK que se propaga a la tabla 'sites_web' es explícitamente 'user_id'
+        return $this->hasOne(Site_Web::class, 'user_id'); // 1:1
+    }
 }
