@@ -29,8 +29,14 @@
 @section('content')
     <div class="grid grid-cols-2 gap-4">
 
-        <div>
-            01
+        <div class="w-[80vh] h-[60vh] block overflow-y-scroll overflow-x-hidden scroll-auto ">
+
+            @include('dashboard.website.header')
+
+            @include('dashboard.website.main')
+
+            @include('dashboard.website.footer')
+
         </div>
 
         <div>
@@ -91,7 +97,7 @@
                 </div>
 
                 <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <a href="{{ route('dashboard.index', ['dominio' => $site_web->dominio]) }}"
+                    <a href="{{ route('web-site.index', ['dominio' => $site_web->dominio]) }}"
                         class="text-sm font-semibold leading-6 text-gray-900">Ver
                         Sitio</a>
                     <button type="submit"

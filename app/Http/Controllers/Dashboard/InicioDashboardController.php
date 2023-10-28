@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\Site_Web;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,7 +15,15 @@ class InicioDashboardController extends Controller
     {
         $site_web = Site_Web::where('user_id', Auth::id())->first();
 
-        return view('dashboard.index', ['site_web' => $site_web]);
+        $sliders = Slider::where('site_web_id', $site_web->id)->get();
+
+        return view(
+            'dashboard.index',
+            [
+                'site_web' => $site_web,
+                'sliders' => $sliders
+            ]
+        );
     }
 
     // Show the form for creating a new resource.
@@ -52,19 +61,7 @@ class InicioDashboardController extends Controller
      */
     public function update(Request $request)
     {
-        $request->validate([
-            'id' => 'required|exists:sites_web,id',
-            'dominio' => 'required',
-            'activo' => 'required',
-        ]);
-
-        $site_web = Site_Web::findOrFail($request->id);
-
-        $site_web->dominio = $request->dominio;
-        $site_web->activo = $request->activo;
-        $site_web->save();
-
-        return redirect()->route('dashboard.index');
+        //
     }
 
     /**

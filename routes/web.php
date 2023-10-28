@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Dashboard\InicioDashboardController;
 use App\Http\Controllers\Dashboard\SliderController;
+use App\Http\Controllers\Dashboard\WebSiteController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\InicioWebController;
 use Illuminate\Support\Facades\Route;
@@ -9,6 +10,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::name('web.')->group(function () {
     Route::get('/', [InicioWebController::class, 'index'])->name('index');
+});
+
+Route::prefix('mysite')->name('web-site.')->group(function () {
+    Route::get('/{dominio}', [WebSiteController::class, 'index'])->name('index');
 });
 
 
@@ -31,7 +36,7 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->name('dashboard.')
 
     Route::get('/', [InicioDashboardController::class, 'index'])->name("index");
 
-    Route::get('/actualizar-web-site', [InicioDashboardController::class, 'update'])->name('actualizar-web-site');
+    Route::get('/actualizar-web-site', [WebSiteController::class, 'update'])->name('actualizar-web-site');
 
     Route::prefix('sliders')->name('sliders.')->group(function () {
 

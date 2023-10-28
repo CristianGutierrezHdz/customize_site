@@ -17,7 +17,9 @@
     @yield('style-page')
 </head>
 
-<body>
+{{-- class="overflow-hidden" --}}
+
+<body class="overflow-hidden">
 
     <div class="min-h-screen flex flex-row bg-gray-100">
         <div class="flex flex-col w-56 bg-white rounded-r-3xl overflow-hidden">

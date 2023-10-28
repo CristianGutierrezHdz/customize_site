@@ -80,7 +80,7 @@
                                 </td>
                                 <td
                                     class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">
-                                    <img src="{{ asset('resources/web/customize/admin/' . $dato->imagen) }}"
+                                    <img src="{{ asset('resources/web/customize/sliders/' . $dato->imagen) }}"
                                         class="max-w-sm rounded border bg-gray p-1 w-48" alt="..." />
                                 </td>
                                 <td

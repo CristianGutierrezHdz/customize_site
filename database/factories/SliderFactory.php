@@ -18,10 +18,10 @@ class SliderFactory extends Factory
 
         return [
             'site_web_id' => 1,
-            'titulo' => $this->faker->sentence(3),
+            'titulo' => $this->faker->sentence(5),
             'imagen' => $this->faker->randomElement($images),
             'link' => $this->faker->url,
-            'spam' => $this->faker->sentence(2),
+            'spam' => $this->faker->sentence(1),
             'activo' => $this->faker->boolean,
         ];
     }
