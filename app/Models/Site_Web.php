@@ -22,7 +22,7 @@ class Site_Web extends Model
     {
         // la llave primaria de esta tabla 'sites_web' se propaga en 'sliders'
         // la FK que se propaga en 'sliders' es explícitamente 'site_web_id'
-        return $this->hasOne(Slider::class, 'site_web_id'); // 1:1
+        return $this->hasMany(Slider::class, 'site_web_id'); // 1:N
     }
 
     // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ relaciones FK de la tabla ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄

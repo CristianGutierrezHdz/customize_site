@@ -39,7 +39,13 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->name('dashboard.')
     Route::get('/actualizar-web-site', [WebSiteController::class, 'update'])->name('actualizar-web-site');
 
     Route::prefix('sliders')->name('sliders.')->group(function () {
-
         Route::get('/', [SliderController::class, 'index'])->name("index");
+
+        Route::get('/crear', [SliderController::class, 'create'])->name('crear');
+        Route::get('/editar/{id}', [SliderController::class, 'edit'])->name('editar');
+
+        Route::post('/guardar', [SliderController::class, 'store'])->name('guardar');
+        Route::post('/actualizar', [SliderController::class, 'update'])->name('actualizar');
+        Route::post('/eliminar', [SliderController::class, 'destroy'])->name('eliminar');
     });
 });

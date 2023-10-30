@@ -11,7 +11,7 @@ return new class extends Migration
     {
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('site_web_id')->unique(); // FK -> 'site_web_id' / (1:1)
+            $table->unsignedBigInteger('site_web_id'); // FK -> 'site_web_id' / (1:N)
             $table->string('titulo');
             $table->string('imagen');
             $table->string('link');
