@@ -37,6 +37,7 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->name('dashboard.')
     Route::get('/', [InicioDashboardController::class, 'index'])->name("index");
 
     Route::get('/actualizar-web-site', [WebSiteController::class, 'update'])->name('actualizar-web-site');
+    Route::get('/guardar-web-site', [WebSiteController::class, 'store'])->name('guardar-web-site');
 
     Route::prefix('sliders')->name('sliders.')->group(function () {
         Route::get('/', [SliderController::class, 'index'])->name("index");

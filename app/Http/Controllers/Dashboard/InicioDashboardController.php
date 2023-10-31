@@ -13,17 +13,25 @@ class InicioDashboardController extends Controller
     // Display a listing of the resource.
     public function index()
     {
+
         $site_web = Site_Web::where('user_id', Auth::id())->first();
+        if ($site_web) {
 
-        $sliders = Slider::where('site_web_id', $site_web->id)->get();
+            $site_web = Site_Web::where('user_id', Auth::id())->first();
 
-        return view(
-            'dashboard.index',
-            [
-                'site_web' => $site_web,
-                'sliders' => $sliders
-            ]
-        );
+            $sliders = Slider::where('site_web_id', $site_web->id)->get();
+
+            return view(
+                'dashboard.index',
+                [
+                    'site_web' => $site_web,
+                    'sliders' => $sliders
+                ]
+            );
+        } else {
+
+            return view('dashboard.index');
+        }
     }
 
     // Show the form for creating a new resource.

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Site_Web;
 use App\Models\Slider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class WebSiteController extends Controller
 {
@@ -30,7 +31,19 @@ class WebSiteController extends Controller
     // Store a newly created resource in storage.
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'dominio' => 'required',
+            'activo' => 'required'
+        ]);
+
+
+        Site_Web::create([
+            'user_id' => auth()->user()->id,
+            'dominio' => $request->dominio,
+            'activo' =>  $request->activo
+        ]);
+
+        return redirect()->route('dashboard.index');
     }
 
     // Display the specified resource.
