@@ -9,17 +9,18 @@ use Illuminate\Support\Facades\Auth;
 
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\File;
+use Illuminate\View\View;
 
 class SliderController extends Controller
 {
     // Display a listing of the resource.
-    public function index()
+    public function index(): View
     {
         $user = auth()->user();
         $site_web_id = $user->sites_web->id;
         $sliders = Slider::where('site_web_id', $site_web_id)->get(); // <- este pinche get o frish que se joda
 
-        return view('dashboard.sliders.sliders', ['sliders' => $sliders]);
+        return view('dashboard.sliders', ['sliders' => $sliders]);
     }
 
     // Show the form for creating a new resource.
@@ -29,7 +30,7 @@ class SliderController extends Controller
         $site_web_id = $user->sites_web->id;
         $sliders = Slider::where('site_web_id', $site_web_id)->get();
 
-        return view('dashboard.sliders.sliders', ['sliders' => $sliders, 'modal' => true]);
+        return view('dashboard.sliders', ['sliders' => $sliders, 'modal' => true]);
     }
 
     // Store a newly created resource in storage.
@@ -80,7 +81,7 @@ class SliderController extends Controller
         $site_web_id = $user->sites_web->id;
         $sliders = Slider::where('site_web_id', $site_web_id)->get();
 
-        return view('dashboard.sliders.sliders', ['sliders' => $sliders, 'modal' => true, 'slider' => $slider]);
+        return view('dashboard.sliders', ['sliders' => $sliders, 'modal' => true, 'slider' => $slider]);
     }
 
     // Update the specified resource in storage.

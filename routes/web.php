@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\Dashboard\BannerController;
+use App\Http\Controllers\Dashboard\BlogController;
 use App\Http\Controllers\Dashboard\InicioDashboardController;
+use App\Http\Controllers\Dashboard\LanzaderaController;
+use App\Http\Controllers\Dashboard\NoticiaController;
 use App\Http\Controllers\Dashboard\SliderController;
 use App\Http\Controllers\Dashboard\WebSiteController;
 use App\Http\Controllers\ProfileController;
@@ -48,5 +52,21 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->name('dashboard.')
         Route::post('/guardar', [SliderController::class, 'store'])->name('guardar');
         Route::post('/actualizar', [SliderController::class, 'update'])->name('actualizar');
         Route::post('/eliminar', [SliderController::class, 'destroy'])->name('eliminar');
+    });
+
+    Route::prefix('lanzadera')->name('lanzadera.')->group(function () {
+        Route::get('/', [LanzaderaController::class, 'index'])->name("index");
+    });
+
+    Route::prefix('banners')->name('banners.')->group(function () {
+        Route::get('/', [BannerController::class, 'index'])->name("index");
+    });
+
+    Route::prefix('noticias')->name('noticias.')->group(function () {
+        Route::get('/', [NoticiaController::class, 'index'])->name("index");
+    });
+
+    Route::prefix('blogs')->name('blogs.')->group(function () {
+        Route::get('/', [BlogController::class, 'index'])->name("index");
     });
 });

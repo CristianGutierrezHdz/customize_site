@@ -48,7 +48,7 @@
 
 
         <div>
-            <form action="{{ isset($slider) ? route('dashboard.actualizar-web-site') : route('dashboard.guardar-web-site') }}" method="GET">
+            <form action="{{ isset($site_web) ? route('dashboard.actualizar-web-site') : route('dashboard.guardar-web-site') }}" method="GET">
                 @csrf
                 <div class="space-y-12">
                     <div class="border-b border-gray-900/10 pb-12">
@@ -77,7 +77,6 @@
 
                             <div class="col-span-full flex">
                                 <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Activo</label>
-                                <!-- Agrega espacio de separación con una clase de margen a continuación -->
                                 <label class="ml-4 relative inline-flex cursor-pointer items-center">
                                     @if (isset($site_web))
                                         <input type="hidden" id="activo" value="{{ $site_web->activo }}" name="activo">
