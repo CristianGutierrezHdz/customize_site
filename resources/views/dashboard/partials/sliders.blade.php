@@ -69,12 +69,11 @@
                                         <div class="relative focus-within:text-gray-600 text-gray-400">
                                             <label class="ml-4 relative inline-flex cursor-pointer items-center">
                                                 @if (isset($slider))
-                                                    <input type="hidden" id="activo" value="{{ $slider->activo }}" name="activo">
-                                                    <input class="hidden" type="checkbox" id="toggle_1" value="{{ $slider->activo }}">
-                                                    <label
-                                                        class="flex items-center w-10 border border-black h-6 p-1 rounded-full cursor-pointer {{ $slider->activo == 0 ? 'justify-start' : 'justify-end bg-black' }}"
+                                                    <input type="hidden" id="activo" value="1" name="activo">
+                                                    <input class="hidden" type="checkbox" id="toggle_1" value="1">
+                                                    <label class="flex items-center w-10 border border-black h-6 p-1 rounded-full cursor-pointer justify-start"
                                                         for="toggle_1">
-                                                        <span class="w-4 h-4 rounded-full {{ $slider->activo == 0 ? 'bg-black' : 'bg-white' }}"></span>
+                                                        <span class="w-4 h-4 rounded-full bg-black"></span>
                                                     </label>
                                                 @else
                                                     <input type="hidden" id="activo" value="1" name="activo">
