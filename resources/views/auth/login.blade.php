@@ -1,3 +1,23 @@
+@extends('layouts.Base_L')
+@section('content')
+<section class="absolute h-screen w-screen grid place-content-center">
+    <div class="p-5 rounded-lg bg-stone-200 bg-opacity-50 border-2 border-morado-1">
+        <div class="grid place-content-center">
+            <img class="h-40" src="{{asset('resources/web/logo/bg-logo.png')}}" alt="">
+        </div>
+        <div class="grid"> 
+            <h1 class="ml-1 mb-1">Correo</h1>
+            <input class="rounded-lg border-2 bg-stone-50 bg-opacity-30 border-morado-1" type="text">
+        </div>
+    </div>
+</section>
+<section class="h-screen w-screen font-[Open Sans] font-thin flex overflow-hidden">
+        <div class="underlay-photo h-full w-full" style="background-image: url({{asset('resources/web/images/bg3.jpg')}})"></div>
+        <div class="underlay-black"></div> 
+</section>
+@endsection
+
+{{-- 
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -8,7 +28,13 @@
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-text-input id="email" 
+                            class="block mt-1 w-full" 
+                            type="email" 
+                            name="email" 
+                            :value="old('email')" 
+                            required autofocus 
+                            autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -44,4 +70,5 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-guest-layout> 
+--}}
