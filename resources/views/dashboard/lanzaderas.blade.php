@@ -144,7 +144,7 @@
 @section('content')
     {{--  --}}
     <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
-        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white shadow-lg px-12">
+        <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-azul-1 shadow-lg px-12">
             <div class="flex justify-between">
                 <div class="inline-flex border rounded w-7/12 px-2 lg:px-6 h-12 bg-transparent">
                     <div class="flex flex-wrap items-stretch w-full h-full mb-6 relative">
@@ -160,40 +160,40 @@
                             </span>
                         </div>
                         <input type="text"
-                            class="flex-shrink flex-grow leading-normal tracking-wide w-px flex-1 border border-none border-l-0 rounded rounded-l-none px-3 relative focus:outline-none text-xxs text-gray-500 font-thin"
+                            class="flex-shrink flex-grow leading-normal tracking-wide w-px flex-1 border border-none border-l-0 rounded rounded-l-none px-3 relative focus:outline-none text-xxs text-morado-1 bg-azul-1 font-thin placeholder:text-negro"
                             placeholder="Search">
                     </div>
 
                 </div>
-                <a href="#" class="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
+                <a href="#" class="border-2 border-negro bg-morado-1 rounded-lg px-3 py-2 text-azul-1 cursor-pointer hover:bg-morado-1/70">
                     Agregar Lanzadera
                 </a>
 
             </div>
         </div>
-        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+        <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-stone-200 shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
             <table class="min-w-full">
                 <thead>
                     <tr>
-                        <th class=" px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-blue-500 tracking-wider">
+                        <th class=" px-6 py-3 border-b-2 border-morado-1 text-left leading-4 text-morado-1 tracking-wider">
                             ID
                         </th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                             titulo</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                             imagen</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                             link</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                             spam</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                             Activo</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                        <th class="px-6 py-3 border-b-2 border-morado-1 text-left text-sm leading-4 text-morado-1 tracking-wider">
                         </th>
 
                     </tr>
                 </thead>
-                <tbody class="bg-white">
+                <tbody class="bg-amarillo-1">
 
                     @isset($sliders)
                         @foreach ($sliders as $dato)
