@@ -2,6 +2,6 @@
 @import url(sty.css);
 @import url(scroll.css);
 @tailwind base;
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
 
