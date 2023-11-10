@@ -7,26 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zerosoft</title>
 
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    {{-- Vite --}}
+    @vite('resources/css/app.css')
 
     <!-- component -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
     @yield('style-page')
-</head>
-
-{{-- class="overflow-hidden" --}}
-
+</head> 
 <body>
 
     <div class="min-h-screen flex flex-row bg-amarillo-1">
         <div class="flex flex-col w-56 bg-morado-1 rounded-r-3xl overflow-hidden">
             <div class="flex items-center justify-center h-20 shadow-md shadow-negro/40">
                 <a href="{{ route('dashboard.index') }}">
-                    <img class="h-20 filter invert sepia" src="{{asset('resources/web/logo/logo.png')}}" alt="">
-                    {{-- <h1 class="text-3xl uppercase text-indigo-500">Logo</h1> --}}
+                    <img class="h-20 filter invert sepia" src="{{asset('resources/web/logo/logo.png')}}" alt=""> 
                 </a>
             </div>
             <ul class="flex flex-col py-4">
