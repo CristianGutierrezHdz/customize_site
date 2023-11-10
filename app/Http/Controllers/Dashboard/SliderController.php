@@ -90,7 +90,6 @@ class SliderController extends Controller
         $request->validate([
             'id' => 'required|exists:sliders,id',
             'link' => 'required',
-            'link' => 'required',
             'spam' => 'required',
             'activo' => 'required'
         ]);

@@ -1,5 +1,5 @@
 @extends('layouts.Base_L')
-@section('content')
+{{-- @section('content')
 <section class="absolute h-screen w-screen grid place-content-center">
     <div class="p-5 rounded-lg bg-stone-200 bg-opacity-50 border-2 border-morado-1">
         <div class="grid place-content-center">
@@ -15,9 +15,8 @@
         <div class="underlay-photo h-full w-full" style="background-image: url({{asset('resources/web/images/bg3.jpg')}})"></div>
         <div class="underlay-black"></div> 
 </section>
-@endsection
-
-{{-- 
+@endsection --}}
+ 
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -71,4 +70,3 @@
         </div>
     </form>
 </x-guest-layout> 
---}}

@@ -1,6 +1,7 @@
 @import url(rainbow.css);
-@import url(sty.css);
+@import url(sty.css); 
+
 @tailwind base;
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
 

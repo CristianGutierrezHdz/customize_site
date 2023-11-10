@@ -11,15 +11,41 @@ use Illuminate\Support\Facades\Auth;
 class WebSiteController extends Controller
 {
     // Display a listing of the resource.
-    public function index()
+    public function index($dominio)
     {
-        // Obtener el usuario autenticado
-        $user = auth()->user();
+        $site_web = Site_Web::where('dominio', $dominio)->where('activo', 1)->first();
 
-        $site_web_id = $user->sites_web->id;
-        $sliders = Slider::where('site_web_id', $site_web_id)->get();
+        if ($site_web) {
 
-        return view('layouts.website', ['sliders' => $sliders]);
+            $sliders = Slider::where('site_web_id', $site_web->id)->get();
+
+            return view(
+                'layouts.website',
+                [
+                    'site_web' => $site_web,
+                    'sliders' => $sliders
+                ]
+            );
+        } else {
+
+            return view('layouts.page-not-found');
+        }
+
+        /*
+        $site_web_id = Site_Web::where('dominio', $dominio)
+            ->where('activo', 1)
+            ->select('id')
+            ->first();
+
+        if ($site_web_id) {
+            $sliders = Slider::where('site_web_id', $site_web_id)->get();
+
+            dd($sliders);
+            return view('layouts.website', ['sliders' => $sliders]);
+        } else {
+            return view('layouts.page-not-found');
+        }
+        */
     }
 
     // Show the form for creating a new resource.
@@ -63,7 +89,7 @@ class WebSiteController extends Controller
     {
         $request->validate([
             'id' => 'required|exists:sites_web,id',
-            'dominio' => 'required',
+            'dominio' => 'required|regex:/^\S*$/',
             'activo' => 'required',
         ]);
 
