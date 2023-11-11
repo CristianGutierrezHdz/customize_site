@@ -10,7 +10,7 @@
             </div>
             <div class="p-5">
                 <h1 class="font-bold text-[27px] text-morado-1">
-                    ¡Somos la empresa que estas buscando!
+                    ¡Somos la empresa que estás buscando!
                 </h1>
                 <div class="w-52 p-3 mt-6 bg-morado-1">
                     <p class="font-semibold text-base text-center text-amarillo-1">
@@ -30,18 +30,15 @@
 
     <section>
         <div class="h-96 bg-amarillo-1 grid place-content-center overflow-hidden">
-            <div class="h-60 w-screen bg-azul-1 flex">
+            <div class="h-60 w-screen flex">
                 <div class="h-full w-[100%] bg-azul-1">
-                    <div class="px-16 py-10">
-                        <H2 class="pb-2 font-normal text-xl text-morado-1">
+                    <div class="h-full px-16 py-10 grid place-content-center">
+                        <H2 class="pb-2 font-normal text-3xl text-morado-1">
                             Desarrolladores de alto calibre
                         </H2>
                         <h1 class="pb-2 font-light">
-                            Somos una empresa con un enorme recorrido en la elavoracion de paginas web, nosotros nos adaptamos a las necidades que tengas para que tu empreza tenga un prospero despege.
+                            Somos una empresa con un enorme recorrido en la elaboración de páginas web, nosotros nos adaptamos a las necesidades que tengas para que tu empresa tenga un próspero despegue.
                         </h1>
-                        <button class="border-x-[20px] border-y-2 p-2 border-morado-1 bg-morado-1 text-amarillo-1 font-semibold">
-                            Conoce cómo hacerlo 
-                        </button>
                     </div>
                 </div>
                 <div class="relative w-3/5">
@@ -56,12 +53,12 @@
     <section>
         <div class="bg-stone-300 px-10 py-5 shadow-inner">
             <div class="w-[90vw] overflow-x-scroll">
-                <div class="flex gap-5">
+                <div class="flex mb-2 gap-5">
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
-                        <img class="h-[50%] w-[420px]" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/cliente.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Desarrollamos paginas a medida</h2>
-                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <h2 class="font-semibold text-2xl"> Desarrollamos páginas a medida </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#Cuchao</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
                                     <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,10 +73,10 @@
                         </div>
                     </div>
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
-                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/bg4.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Trabajamos con diseños inovadores </h2>
-                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <h2 class="font-semibold text-2xl"> Trabajamos con diseños innovadores! </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#Beautiful</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
                                     <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,10 +91,10 @@
                         </div>
                     </div>
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
-                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/Seguridad.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Nos unimos para ayudar a salvar vidas</h2>
-                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <h2 class="font-semibold text-2xl"> Contamos con seguridad de Vanguardia </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#Safe</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
                                     <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,8 +108,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </div>
     </section>
@@ -120,217 +116,31 @@
     <section>
         <div class="h-96 bg-amarillo-1 grid place-content-center overflow-hidden">
             <div class="h-60 w-screen flex">
-                <div class="h-full w-[100%] bg-morado-1">
-                    <div class="pl-16 py-10 flex gap-2">
+                <div class="h-full w-[100%] bg-morado-1 grid place-content-center">
+                    <div class="pl-16 py-10 h-full flex gap-2">
                         <div class="pt-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-emerald-300">
+                                stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-azul-1">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                             </svg>
                         </div>
                         <div class="text-amarillo-1">
-                            <H2 class="pb-2 text-2xl">¿Quieres saber de finanzas?</H2>
-                            <h1 class="pb-2">Pregúntale a Educación Financiera BBVA</h1>
-                            <div class="grid md:flex md:gap-3">
-                                <button
-                                    class="w-32 border-x-[20px] border-y-2 p-2 border-azul-1 bg-azul-1 text-white font-semibold">
-                                    Ver video
-                                </button>
-                                <a class="pt-2.5" href="#"> Quiero saber más </a>
-                            </div>
+                            <H2 class="pb-2 text-3xl">Talento 100% Chiapaneco</H2>
+                            <h1 class="pb-2">Nuestro equipo se conforma de talento del Estado, todos estudiantes de la Universidad Autónoma de Chiapas!
+                            </h1>
                         </div>
                     </div>
                 </div>
                 <div class="relative w-3/5">
                     <div class="tri-2"></div>
-                    <img class="h-full object-cover object-right" src="{{ asset('resources/web/images/mujer-home.png') }}"
+                    <img class="h-full object-cover object-right" src="{{ asset('resources/web/images/unach.jpg') }}"
                         alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="h-72 bg-amarillo-1 grid place-content-center overflow-hidden">
-            <div class="h-60 w-screen flex">
-                <div class="h-full w-[100%] bg-azul-1">
-                    <div class="pl-16 py-10 flex gap-2">
-                        <div class="pt-1.5">
-                            <div class="relative h-5 w-5 mt-0.5 bg-morado-1 rounded-full">
-                                <p class="absolute text-azul-1 -mt-1.5 h-5 w-5 text-center">¡</p>
-                            </div>
-                        </div>
-                        <div class="text-negro">
-                            <H2 class="pb-2 text-2xl">¿Y tú ya estás al día?</H2>
-                            <h1 class="pb-2">Con la última actualización de tu app BBVA tienes lo que ya conoces y más,
-                                solo te tomará unos minutos actualizarla</h1>
-                            <div class="py-2.5">
-                                <a class="flex hover:underline text-morado-1" href="#">
-                                    <div class="relative h-5 w-5 mt-0.5 mr-3 bg-morado-1 rounded-full">
-                                        <p class="absolute text-azul-1 text-sm -mt-[0.5px] h-5 w-5 text-center">✓</p>
-                                    </div>
-                                    <p class="text-morado-1 font-semibold">
-                                        Conoce como hacerlo
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="pb-16 bg-morado-1">
-            <div class="h-44 grid place-content-center ">
-                <div class="text-center gap-4 grid grid-cols-1 text-amarillo-1">
-                    <h1 class="text-[27px] font-light">
-                        Tu banco desde el celular
-                    </h1>
-                    <p class="font-bold">
-                        Conoce nuestras aplicaciones moviles
-                    </p>
-                </div>
-            </div>
-
-            {{-- este elemeto se puede repetir --}}
-            <div class="mx-4 h-72 bg-azul-1 text-morado-1 flex">
-                <div class="h-full w-3/5 grid place-content-center">
-                    <div class="w-[340px] gap-4 grid grid-cols-1 text-neutral-100">
-                        <h1 class="font-bold text-xl">
-                            BBVA México
-                        </h1>
-                        <p class="text-base">
-                            Puedes realizar operaciones bancarias estés donde estés, conectándote con BBVA desde tu celular.
-                        </p>
-                    </div>
-                </div>
-                <div class="h-full w-2/5 overflow-hidden relative">
-                    <div class="bg-contain bg-right-top bg-no-repeat h-[600px] w-[550px] absolute right-0"
-                        style="background-image: url({{ asset('resources/web/images/bbva-mx-go.avif') }})"></div>
-                </div>
-            </div>
-            {{--  --}}
-        </div>
-    </section>
-
-    <section>
-        <div class="h-72 bg-amarillo-1 grid place-content-center overflow-hidden">
-            <div class="h-44 w-screen">
-                <div class="h-full w-[100%] bg-azul-1">
-                    <div class="pl-10 py-5 flex gap-10 md:place-content-around md:gap-0">
-                        <div class="pt-1.5">
-                            <img class="h-32 w-32" src="{{ asset('resources/web/images/mujer-home.png') }}"
-                                alt="">
-                        </div>
-                        <div class="text-negro w-80 md:w-auto grid place-content-center">
-                            <H2 class="pb-2 font-medium text-2xl">
-                                Protegete del fraude
-                            </H2>
-                            <h1 class="pb-2">
-                                Conoce lo que nunca, nunca, nunca debes hacer, cómo operan los delincuentes y cómo
-                                distinguir a BBVA de ellos.
-                            </h1>
-                        </div>
-                        <div class="grid place-content-center">
-                            <a class="h-16 mr-10 px-4 grid place-content-center bg-morado-1" href="#">
-                                <p class="text-azul-1 text-center font-semibold">
-                                    Conoce más
-                                </p>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-amarillo-1">
-        <div class="py-5 px-8 grid gap-8 grid-cols-1 md:grid-cols-2">
-            <div class="h-[50vh] bg-azul-1 md:h-full">
-                <div class="h-3/5 bg-cover"
-                    style="background-image: url({{ asset('resources/web/images/img.jpg') }})"></div>
-                <div class="h-2/5 px-6 relative">
-                    <div class="absolute top-7 gap-2 text-morado-1 grid grid-cols-1">
-                        <h1 class="font-medium text-2xl">
-                            Medio ambiente
-                        </h1>
-                        <p class="font-light text-negro">
-                            En BBVA, la sostenibilidad significa crear oportunidades para poder conseguirlo.
-                        </p>
-                        <a class="text-blue-700 font-medium" href="#">
-                            Saber más
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="h-[75vh] grid grid-cols-2 gap-4">
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section>
         <div class="h-[150vh] w-screen px-40 grid grid-cols-1 md:grid-cols-3 md:h-[50vh] bg-stone-300 shadow-inner">
@@ -342,7 +152,7 @@
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Cristian Gutierrez Hernandez
+                        Cristian Gutiérrez Hernández
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
                         Desarrollador BackEnd
@@ -372,10 +182,10 @@
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Fatima De Los Santos Fiallo
+                        Fátima De Los Santos Fiallo
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
-                        Especialista en ciberseguridad
+                        Especialista en Ciberseguridad
                     </h2>
                 </div>
             </div>
