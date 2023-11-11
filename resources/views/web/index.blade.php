@@ -10,7 +10,7 @@
             </div>
             <div class="p-5">
                 <h1 class="font-bold text-[27px] text-morado-1">
-                    ¡Somos la empresa que estas buscando!
+                    ¡Somos la empresa que estás buscando!
                 </h1>
                 <div class="w-52 p-3 mt-6 bg-morado-1">
                     <p class="font-semibold text-base text-center text-amarillo-1">
@@ -37,7 +37,7 @@
                             Desarrolladores de alto calibre
                         </H2>
                         <h1 class="pb-2 font-light">
-                            Somos una empresa con un enorme recorrido en la elavoracion de paginas web, nosotros nos adaptamos a las necidades que tengas para que tu empreza tenga un prospero despege.
+                            Somos una empresa con un enorme recorrido en la elaboración de páginas web, nosotros nos adaptamos a las necesidades que tengas para que tu empresa tenga un próspero despegue.
                         </h1>
                         <button class="border-x-[20px] border-y-2 p-2 border-morado-1 bg-morado-1 text-amarillo-1 font-semibold">
                             Conoce cómo hacerlo 
