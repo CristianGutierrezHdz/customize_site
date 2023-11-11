@@ -57,7 +57,7 @@
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
                         <img class="h-[50%] w-full" src="{{ asset('resources/web/images/cliente.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Desarrollamos paginas a medida </h2>
+                            <h2 class="font-semibold text-2xl"> Desarrollamos páginas a medida </h2>
                             <p class="w-[420px] pt-3 text-base text-gray-500">#Cuchao</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
@@ -75,8 +75,8 @@
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
                         <img class="h-[50%] w-full" src="{{ asset('resources/web/images/bg4.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Trabajamos con diseños inovadores </h2>
-                            <p class="w-[420px] pt-3 text-base text-gray-500">#Beutifull</p>
+                            <h2 class="font-semibold text-2xl"> Trabajamos con diseños innovadores! </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#Beautiful</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
                                     <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,8 +93,8 @@
                     <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
                         <img class="h-[50%] w-full" src="{{ asset('resources/web/images/Seguridad.jpg') }}" alt="">
                         <div class="h-[50%] p-6 relative">
-                            <h2 class="font-semibold text-2xl"> Contamos con seguridad de vanguardia </h2>
-                            <p class="w-[420px] pt-3 text-base text-gray-500">#safe</p>
+                            <h2 class="font-semibold text-2xl"> Contamos con seguridad de Vanguardia </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#Safe</p>
                             <div class="absolute flex bottom-0 left-0 p-8 gap-2">
                                 <div class="pt-0.5">
                                     <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,8 +126,8 @@
                             </svg>
                         </div>
                         <div class="text-amarillo-1">
-                            <H2 class="pb-2 text-3xl">Talento 100% chiapaneco</H2>
-                            <h1 class="pb-2">Nuestro equipo se encuentra formado con talento del estado, todos estudiantes de la univesidad automoma de chiapas
+                            <H2 class="pb-2 text-3xl">Talento 100% Chiapaneco</H2>
+                            <h1 class="pb-2">Nuestro equipo se conforma de talento del Estado, todos estudiantes de la Universidad Autónoma de Chiapas!
                             </h1>
                         </div>
                     </div>
@@ -141,89 +141,6 @@
         </div>
     </section>
 
-    <section class="bg-amarillo-1">
-        <div class="py-5 px-8 grid gap-8 grid-cols-1 md:grid-cols-2">
-            <div class="h-[50vh] bg-azul-1 md:h-full">
-                <div class="h-3/5 bg-cover"
-                    style="background-image: url({{ asset('resources/web/images/img.jpg') }})"></div>
-                <div class="h-2/5 px-6 relative">
-                    <div class="absolute top-7 gap-2 text-morado-1 grid grid-cols-1">
-                        <h1 class="font-medium text-2xl">
-                            Medio ambiente
-                        </h1>
-                        <p class="font-light text-negro">
-                            En BBVA, la sostenibilidad significa crear oportunidades para poder conseguirlo.
-                        </p>
-                        <a class="text-blue-700 font-medium" href="#">
-                            Saber más
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="h-[75vh] grid grid-cols-2 gap-4">
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-                <div class="bg-azul-1 grid place-content-center px-6">
-                    <div
-                        class="bg-morado-1 h-6 w-6 mb-6 rounded-full text-azul-1 font-medium grid place-content-center">
-                        $
-                    </div>
-                    <h1 class="font-medium text-lg text-morado-1">
-                        Sabemos lo valioso que es tu tiempo
-                    </h1>
-                    <p class="font-light my-1">
-                        Realiza los pagos de tus servicios de manera más rápida, a través de nuestros medios digitales
-                    </p>
-                    <a class="text-morado-1 font-medium" href="#">
-                        Saber más
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section>
         <div class="h-[150vh] w-screen px-40 grid grid-cols-1 md:grid-cols-3 md:h-[50vh] bg-stone-300 shadow-inner">
@@ -235,7 +152,7 @@
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Cristian Gutierrez Hernandez
+                        Cristian Gutiérrez Hernández
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
                         Desarrollador BackEnd
@@ -265,10 +182,10 @@
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Fatima De Los Santos Fiallo
+                        Fátima De Los Santos Fiallo
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
-                        Especialista en ciberseguridad
+                        Especialista en Ciberseguridad
                     </h2>
                 </div>
             </div>
