@@ -58,7 +58,7 @@
                         <div class="border-b border-morado-1 pb-12">
                             <h2 class="text-base font-semibold leading-7 text-azul-1">Sitio web</h2>
                             <p class="mt-1 text-sm leading-6 text-amarillo-1">En este apartado se encuentran las configuraciones
-                                basicas de tu propio sitio web, que es una personalizacion del estilo del sitio web principal
+                                basicas de tu propio sitio web, que es una personalización del estilo del sitio web principal
                             </p>
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
