@@ -7,8 +7,15 @@ use App\Http\Controllers\Dashboard\LanzaderaController;
 use App\Http\Controllers\Dashboard\NoticiaController;
 use App\Http\Controllers\Dashboard\SliderController;
 use App\Http\Controllers\Dashboard\WebSiteController;
+use App\Http\Controllers\Email\VerificarEmailController;
 
 use Illuminate\Support\Facades\Route;
+
+Route::prefix('verificar-email')->name('verificar-email.')->group(function () {
+    Route::get('/{token}', [VerificarEmailController::class, 'store'])->name('store');
+});
+
+
 
 Route::prefix('dashboard')->middleware(['auth', 'verified'])->name('dashboard.')->group(function () {
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -16,20 +17,27 @@ class AuthenticatedSessionController extends Controller
      * Display the login view.
      */
     public function create(): View
-    { 
+    {
         return view('auth.login');
     }
 
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
+    public function store(LoginRequest $request)
     {
-        $request->authenticate();
 
-        $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        $user = User::where('email', $request->email)->first();
+
+        if ($user->verificado == '1') {
+            $request->authenticate();
+
+            $request->session()->regenerate();
+            return redirect()->route('dashboard.index');
+        } else {
+            return view('auth.verificacionEmail.incorrecto');
+        }
     }
 
     /**
