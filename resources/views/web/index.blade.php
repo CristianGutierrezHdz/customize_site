@@ -4,17 +4,17 @@
     <section>
         <div class="h-[530px] w-auto bg-azul-1 relative">
             <div class="h-[310px]">
-                <div class="h-full">
-                    <img class="h-full w-full bg-cover bg-center" src="{{ URL::asset('resources/web/images/mobile-bbva.png')}}" alt="">
+                <div class="h-full w-full bg-cover bg-center"
+                    style="background-image: url({{asset('resources/web/images/img2.jpg')}})">
                 </div>
             </div>
             <div class="p-5">
                 <h1 class="font-bold text-[27px] text-morado-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    ¡Somos la empresa que estas buscando!
                 </h1>
                 <div class="w-52 p-3 mt-6 bg-morado-1">
                     <p class="font-semibold text-base text-center text-amarillo-1">
-                        Conoce cómo aquí
+                        Conoce porque aquí
                     </p>
                 </div>
             </div>
@@ -34,10 +34,10 @@
                 <div class="h-full w-[100%] bg-azul-1">
                     <div class="px-16 py-10">
                         <H2 class="pb-2 font-normal text-xl text-morado-1">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Desarrolladores de alto calibre
                         </H2>
                         <h1 class="pb-2 font-light">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Somos una empresa con un enorme recorrido en la elavoracion de paginas web, nosotros nos adaptamos a las necidades que tengas para que tu empreza tenga un prospero despege.
                         </h1>
                         <button class="border-x-[20px] border-y-2 p-2 border-morado-1 bg-morado-1 text-amarillo-1 font-semibold">
                             Conoce cómo hacerlo 
@@ -54,81 +54,65 @@
     </section>
 
     <section>
-        <div class="flex bg-amarillo-1 py-4 text-morado-1 font-semibold">
-            <div class="w-1/5 grid place-content-center">
-                <div class="grid place-content-center">
-                    <svg class="h-5 w-5 text-morado-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                        <line x1="1" y1="10" x2="23" y2="10" />
-                    </svg>
-                </div>
-                <p>Busco una tarjeta</p>
-            </div>
-            <div class="w-1/5 grid place-content-center">
-                <div class="grid place-content-center">
-                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-                <p>Necesito un credito</p>
-            </div>
-            <div class="w-1/5 grid place-content-center">
-                <div class="grid place-content-center">
-                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-                <p>Quiero una cuenta</p>
-            </div>
-            <div class="w-1/5 grid place-content-center">
-                <div class="grid place-content-center">
-                    <svg class="h-5 w-5 text-morado-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <circle cx="12" cy="12" r="4" />
-                        <circle cx="12" cy="12" r="9" />
-                        <line x1="15" y1="15" x2="18.35" y2="18.35" />
-                        <line x1="9" y1="15" x2="5.65" y2="18.35" />
-                        <line x1="5.65" y1="5.65" x2="9" y2="9" />
-                        <line x1="18.35" y1="5.65" x2="15" y2="9" />
-                    </svg>
-                </div>
-                <p>Seguros</p>
-            </div>
-            <div class="w-1/5 grid place-content-center">
-                <div class="grid place-content-center">
-                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                </div>
-                <p>Pago de impuestos</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="flex bg-stone-300 px-10 py-5 shadow-inner">
-            <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
-                <img class="h-[50%] " src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
-                <div class="h-[50%] p-6 relative">
-                    <h2 class="font-semibold text-2xl"> Nos unimos para ayudar a salvar vidas</h2>
-                    <p class="pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
-                    <div class="absolute flex bottom-0 left-0 p-8 gap-2">
-                        <div class="pt-0.5">
-                            <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
+        <div class="bg-stone-300 px-10 py-5 shadow-inner">
+            <div class="w-[90vw] overflow-x-scroll">
+                <div class="flex gap-5">
+                    <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
+                        <img class="h-[50%] w-[420px]" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <div class="h-[50%] p-6 relative">
+                            <h2 class="font-semibold text-2xl"> Desarrollamos paginas a medida</h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <div class="absolute flex bottom-0 left-0 p-8 gap-2">
+                                <div class="pt-0.5">
+                                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-base text-morado-1">Conoce más aquí</p>
+                            </div>
                         </div>
-                        <p class="font-semibold text-base text-morado-1">Conoce más aquí</p>
+                    </div>
+                    <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
+                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <div class="h-[50%] p-6 relative">
+                            <h2 class="font-semibold text-2xl"> Trabajamos con diseños inovadores </h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <div class="absolute flex bottom-0 left-0 p-8 gap-2">
+                                <div class="pt-0.5">
+                                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-base text-morado-1">Conoce más aquí</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[600px] w-[420px] bg-amarillo-1 shadow-md">
+                        <img class="h-[50%] w-full" src="{{ asset('resources/web/images/mujer-home.png') }}" alt="">
+                        <div class="h-[50%] p-6 relative">
+                            <h2 class="font-semibold text-2xl"> Nos unimos para ayudar a salvar vidas</h2>
+                            <p class="w-[420px] pt-3 text-base text-gray-500">#AliadosPorLaSalud</p>
+                            <div class="absolute flex bottom-0 left-0 p-8 gap-2">
+                                <div class="pt-0.5">
+                                    <svg class="h-5 w-5 text-morado-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-base text-morado-1">Conoce más aquí</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -268,7 +252,7 @@
         <div class="py-5 px-8 grid gap-8 grid-cols-1 md:grid-cols-2">
             <div class="h-[50vh] bg-azul-1 md:h-full">
                 <div class="h-3/5 bg-cover"
-                    style="background-image: url({{ asset('resources/web/images/mobile-bbva.png') }})"></div>
+                    style="background-image: url({{ asset('resources/web/images/img.jpg') }})"></div>
                 <div class="h-2/5 px-6 relative">
                     <div class="absolute top-7 gap-2 text-morado-1 grid grid-cols-1">
                         <h1 class="font-medium text-2xl">
@@ -352,40 +336,46 @@
         <div class="h-[150vh] w-screen px-40 grid grid-cols-1 md:grid-cols-3 md:h-[50vh] bg-stone-300 shadow-inner">
             <div class="h-full w-full grid place-content-center">
                 <div class="grid place-content-center">
-                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md"></div>
+                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md bg-cover bg-center"
+                        style="background-image: url({{asset('resources/web/images/Cristian.jpg')}})"
+                    ></div>
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Sucursales y cajeros
+                        Cristian Gutierrez Hernandez
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
-                        Siempre cerca de ti
+                        Desarrollador BackEnd
                     </h2>
                 </div>
             </div>
             <div class="h-full w-full grid place-content-center">
                 <div class="grid place-content-center">
-                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md"></div>
+                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md bg-cover bg-center"
+                    style="background-image: url({{asset('resources/web/images/foto-c.jpeg')}})"
+                    >
+                </div>
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Sucursales y cajeros
+                        Cedrick Marcial Quintero
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
-                        Siempre cerca de ti
+                        Desarrollador FrontEnd
                     </h2>
                 </div>
             </div>
             <div class="h-full w-full grid place-content-center">
                 <div class="grid place-content-center">
-                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md"></div>
+                    <div class="h-52 w-52 rounded-full bg-azul-1 shadow-md bg-cover bg-center"
+                    style="background-image: url({{asset('resources/web/images/Fatima.jpeg')}})"></div>
                 </div>
                 <div class="w-56 text-center">
                     <h1 class="font-medium text-2xl py-3">
-                        Sucursales y cajeros
+                        Fatima De Los Santos Fiallo
                     </h1>
                     <h2 class="font-medium text-base text-morado-1">
-                        Siempre cerca de ti
+                        Especialista en ciberseguridad
                     </h2>
                 </div>
             </div>
