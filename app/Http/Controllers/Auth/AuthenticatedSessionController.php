@@ -28,7 +28,13 @@ class AuthenticatedSessionController extends Controller
     {
 
 
+
         $user = User::where('email', $request->email)->first();
+
+        if (!$user) {
+            // El usuario no existe
+            return redirect('login');
+        }
 
         if ($user->verificado == '1') {
             $request->authenticate();
