@@ -15,16 +15,22 @@
 
     @yield('style-page')
 </head> 
-<body>
+<body class="h-screen w-screen overflow-hidden">
 
-    <div class="min-h-screen flex flex-row bg-amarillo-1">
-        <div class="flex flex-col w-56 bg-morado-1 rounded-r-3xl overflow-hidden">
+    <div class="min-h-screen flex flex-row  bg-amarillo-1">
+        <div class="md:flex md:flex-col md:w-56 md:hover:w-56 bg-morado-1 rounded-r-3xl overflow-hidden md:static 
+        group z-20
+        absolute grid grid-cols-1 transition-all w-40 hover:w-1/2 ">
             <div class="flex items-center justify-center h-20 shadow-md shadow-negro/40">
-                <a href="{{ route('dashboard.index') }}">
+                <button
+                 {{-- href="{{ route('dashboard.index') }}" --}}
+                >
                     <img class="h-20 filter invert sepia" src="{{asset('resources/web/logo/logo.png')}}" alt=""> 
-                </a>
+                </button>
             </div>
-            <ul class="flex flex-col py-4">
+            <ul class="h-0
+            transition-all group-hover:h-96
+            md:flex md:flex-col md:py-4">
                 <li>
                     <a href="{{ route('dashboard.index') }}"
                         class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-amarillo-1 hover:text-azul-1">
@@ -39,7 +45,6 @@
                         <span class="text-sm font-medium">Sliders</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="{{ route('dashboard.lanzadera.index') }}"
                         class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-amarillo-1 hover:text-azul-1">
@@ -90,11 +95,10 @@
                     </form>
 
                 </li>
-
             </ul>
         </div>
 
-        <div class="px-10 pt-24 pb-20">
+        <div class="h-screen w-screen md:w-auto px-10 pt-24 pb-20">
 
             @yield('content')
 

@@ -27,15 +27,18 @@
 @endsection
 
 @section('content')
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 
         {{--  value="{{ isset($slider) ? $slider->link :  '' }}" --}}
 
-
-        <div class=" 
-         w-[40vw] rounded-lg
-         h-[75vh] border border-morado-1
+        <div class="group h-10 hover:h-[75vh] transition-all
+         w-[86vw] md:w-[40vw] rounded-lg
+         md:h-[75vh] md:hover:h-[75vh] border border-morado-1
          block overflow-y-scroll overflow-x-hidden scroll-auto ">
+            <div class="bg-azul-1 sticky top-0 z-10 h-10 md:h-0">
+                <div class="absolute right-3 top-4 h-1 w-5 bg-morado-1 md:bg-opacity-0">
+                </div>
+            </div>
 
             @if (isset($site_web))
                 @include('dashboard.website.header')
@@ -48,7 +51,6 @@
             @endif
 
         </div>
-
 
         <div class="grid place-content-center">
             <div class="bg-morado-1/80 rounded-xl p-5">
@@ -69,7 +71,7 @@
                                         dominio</label>
                                     <div class="mt-2">
                                         <div
-                                            class="flex rounded-md shadow-sm ring-1 bg-amarillo-1 ring-inset ring-azul-1 focus-within:ring-2 focus-within:ring-inset focus-within:ring-azul-1 sm:max-w-md">
+                                            class="flex rounded-md min-w-xs max-w-2xl overflow-hidden shadow-sm ring-1 bg-amarillo-1 ring-inset ring-azul-1 focus-within:ring-2 focus-within:ring-inset focus-within:ring-azul-1 sm:max-w-md">
                                             <span class="flex select-none items-center pl-3 text-negro sm:text-sm">zerosoft.site/mysite/</span>
                                             <input type="text" name="dominio" id="dominio" autocomplete="dominio"
                                                 value="{{ isset($site_web) ? $site_web->dominio : '' }}"
