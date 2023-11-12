@@ -17,20 +17,27 @@ class SliderController extends Controller
     public function index(): View
     {
         $user = auth()->user();
-        $site_web_id = $user->sites_web->id;
-        $sliders = Slider::where('site_web_id', $site_web_id)->get(); // <- este pinche get o frish que se joda
+        if ($user->sites_web) {
+            $site_web_id = $user->sites_web->id;
+            $sliders = Slider::where('site_web_id', $site_web_id)->get(); // <- este pinche get o frish que se joda
 
-        return view('dashboard.sliders', ['sliders' => $sliders]);
+            return view('dashboard.sliders', ['sliders' => $sliders]);
+        }
+        return view('dashboard.sliders', ['sliders' => null]);
     }
 
     // Show the form for creating a new resource.
     public function create()
     {
         $user = auth()->user();
-        $site_web_id = $user->sites_web->id;
-        $sliders = Slider::where('site_web_id', $site_web_id)->get();
+        if ($user->sites_web) {
+            $site_web_id = $user->sites_web->id;
+            $sliders = Slider::where('site_web_id', $site_web_id)->get();
 
-        return view('dashboard.sliders', ['sliders' => $sliders, 'modal' => true]);
+            return view('dashboard.sliders', ['sliders' => $sliders, 'modal' => true]);
+        } else {
+            return redirect()->route('dashboard.sliders.index');
+        }
     }
 
     // Store a newly created resource in storage.
