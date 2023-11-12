@@ -26,8 +26,8 @@ class VerificacionCorreo extends Mailable
     public function build()
     {
 
-        $Codigo = "http://127.0.0.1:8000/verificar-email/" . $this->token;
+        $Codigo = "https:zerosoft.site/verificar-email/" . $this->token;
 
-        return $this->view('Correo', ['Codigo' => $Codigo]);
+        return $this->view('correo', ['Codigo' => $Codigo]);
     }
 }
