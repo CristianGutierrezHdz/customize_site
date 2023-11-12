@@ -12,7 +12,7 @@
             <div class="w-80 grid place-content-center text-azul-1">
                 <div class="grid">
                     <div class="w-full grid grid-cols-2 place-content-between font-semibold">
-                        <p class="hover:underline">Mapa del sitio</p>
+                        
                         <p class="hover:underline">Aviso de privacidad</p>
                     </div>
                 </div>
